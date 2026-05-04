@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell *)",
+      "Bash(backlog task *)",
+      "Bash(npm run *)",
+      "PowerShell(Get-Process *)",
+      "Bash(npx vite *)",
+      "Bash(start *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
