@@ -6,17 +6,26 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test": "tsx src/parser/parser.test.ts && tsx src/parser/domainMap.test.ts",
+    "test:e2e": "playwright test",
+    "test:visual": "playwright test e2e/visual.spec.ts",
     "preview": "vite preview"
   },
   "dependencies": {
     "framer-motion": "^12.23.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "savepoint": "^1.0.11"
   },
   "devDependencies": {
+    "@playwright/test": "^1.59.1",
     "@tailwindcss/vite": "^4.1.10",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^4.6.0",
     "tailwindcss": "^4.1.10",
+    "tsx": "^4.20.6",
+    "typescript": "^6.0.3",
     "vite": "^7.0.6"
   }
 }
